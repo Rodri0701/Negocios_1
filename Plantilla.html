@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mi página web</title>
+  <style>
+    /* Estilos CSS adicionales para dar formato a la página */
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px;
+      background-color: #f2f2f2;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    nav ul li {
+      margin-right: 20px;
+    }
+
+    main {
+      display: flex;
+      margin: 20px;
+    }
+
+    article {
+      flex: 1;
+      margin-right: 10px; /* Espacio más corto entre los artículos */
+      display: flex;
+      flex-direction: column;
+    }
+
+    section {
+      margin-bottom: 20px;
+      padding: 20px;
+      background-color: #f9f9f9;
+    }
+
+    aside {
+      margin-bottom: 20px;
+      padding: 20px;
+      background-color: #f9f9f9;
+    }
+
+    .aside-container {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .aside-container aside {
+      margin-bottom: 20px;
+      padding: 20px;
+      background-color: #f9f9f9;
+    }
+
+    .aside-container aside:nth-child(2) {
+      margin-top: auto;
+    }
+
+    .aside-outside {
+      width: 30%;
+    }
+
+    .aside-outside aside {
+      margin-bottom: 20px;
+      padding: 20px;
+      background-color: #f9f9f9;
+    }
+
+    footer {
+      background-color: #f2f2f2;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <img src="ruta-de-la-imagen/mi-imagen.jpg" alt="Descripción de la imagen">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">PRODUCTS</a></li>
+        <li><a href="#">SHOPS</a></li>
+        <li><a href="#">BLOG</a></li>
+      </ul>
+    </nav>
+    <div>
+      <span>****</span>
+      <span>555-32-16-12</span>
+    </div>
+  </header>
+
+  <main>
+    <article>
+      <section>
+        <h2>Sección 1</h2>
+        <p>Contenido de la sección 1</p>
+      </section>
+    </article>
+    <article>
+      <section>
+        <h2>Sección 2</h2>
+        <p>Contenido de la sección 2</p>
+      </section>
+    </article>
+    <div class="aside-outside">
+      <aside>
+        <h3>Aside fuera del artículo</h3>
+        <p>Contenido del aside fuera del artículo</p>
+      </aside>
+    </div>
+  </main>
+
+  <footer>
+    <p>Este es el pie de página de mi página web</p>
+  </footer>
+  
+</body>
+</html>
